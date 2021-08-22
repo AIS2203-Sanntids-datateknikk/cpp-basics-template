@@ -3,6 +3,7 @@
 #define EXERCISE1_HPP
 
 #include <string>
+#include <vector>
 
 namespace ais2203
 {
@@ -21,7 +22,15 @@ void assignHelloToStringReference(std::string& str)
     // TODO assign "hello" to str
 }
 
-} // namespace exercise1
+int computeSum(const std::vector<int> &integers)
+{
+
+    // TODO return the sum of all integers in `integers`
+
+    return -1;
+}
+
+} // namespace ais2203
 
 
 #endif // EXERCISE1_HPP

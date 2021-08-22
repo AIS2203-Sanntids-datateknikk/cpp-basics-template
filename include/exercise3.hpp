@@ -5,7 +5,7 @@
 #include <string>
 
 // In the following a definitions for class "Greeter" has been typed. However, it has no implementation yet.
-// In order to exercise3 compile and pass the test(s), implement the constructor body and missing functions in src/exercise3.cpp
+// In order for exercise3 to compile and pass the test(s), implement the constructor body and missing functions in src/exercise3.cpp
 
 namespace ais2203
 {
