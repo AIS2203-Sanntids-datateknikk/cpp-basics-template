@@ -7,3 +7,5 @@ add_executable(test_exercise2 test_exercise2.cpp)
 
 add_executable(test_exercise3 test_exercise3.cpp)
 target_link_libraries(test_exercise3 PUBLIC exercise3)
+
+add_executable(test_exercise4 test_exercise4.cpp)
