@@ -2,11 +2,8 @@
 #ifndef TEST_EXERCISE_EXERCISE4_HPP
 #define TEST_EXERCISE_EXERCISE4_HPP
 
-#include <sstream>
 #include <string>
 #include <utility>
-#include <vector>
-#include <iostream>
 
 namespace ais2203
 {
