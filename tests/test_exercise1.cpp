@@ -2,6 +2,7 @@
 
 #include <cstdlib>
 #include <numeric>
+#include <algorithm>
 
 #define CATCH_CONFIG_MAIN
 #include "catch.hpp"
@@ -41,7 +42,7 @@ TEST_CASE("4: count elements")
         list.emplace_back(rand() % 100); // element in the range 0 to 99
     }
 
-    auto count = std::count_if(list.begin(), list.end(), [&](double& value){
+    auto count = std::count_if(list.begin(), list.end(), [](double value){
         return value > 50;
     });
     REQUIRE(count == ais2203::countValuesBelowThreshold(list));
