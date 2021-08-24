@@ -23,12 +23,27 @@ TEST_CASE("2: assign hello to reference")
 TEST_CASE("3: compute sum")
 {
     const int num = 100;
-    std::vector<int> integers(num);
+    std::vector<int> list(num);
     for (int i = 0; i < num; i++) {
-        integers.emplace_back(rand() % 100); // element in the range 0 to 99
+        list.emplace_back(rand() % 100); // element in the range 0 to 99
     }
 
-    int sum = std::accumulate(integers.begin(), integers.end(), 0);
-    REQUIRE(sum == ais2203::computeSum(integers));
+    int sum = std::accumulate(list.begin(), list.end(), 0);
+    REQUIRE(sum == ais2203::computeSum(list));
+
+}
+
+TEST_CASE("4: count elements")
+{
+    const int num = 100;
+    std::vector<double> list(num);
+    for (int i = 0; i < num; i++) {
+        list.emplace_back(rand() % 100); // element in the range 0 to 99
+    }
+
+    auto count = std::count_if(list.begin(), list.end(), [&](double& value){
+        return value > 50;
+    });
+    REQUIRE(count == ais2203::countValuesBelowThreshold(list));
 
 }

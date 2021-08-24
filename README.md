@@ -12,8 +12,12 @@ The struct/class should have public members x,y and z of type float. They must b
 
 ### Exercise 3
 
-A class named `Greeter` has been defined in the header `exercise3.hpp`, however, its functions has only been declarred and not implmented yet.
+A class named `Greeter` has been defined in the header `exercise3.hpp`, however, its functions has only been declared and not implemented yet.
 Your task is to generate the missing body for the defined constructor/functions.
 The function `make_greet` must return a string that equals to 'Hello, <insert_name>!', where <insert_name> should be replaced with the name either passed though the constructor or later set using _set_name_.
+
+### Exercise 4
+
+Implement the missing function `make_greet` that the class `Student` inherits from `Person`, so that it fulfills the stated requirement.  
 
 In order to successfully run individual tests (ignoring compile errors in other tests) locally, you can configure the IDE or run `./build_and_test.sh` with the test number as an argument. E.g. `./build_and_test.sh 1`

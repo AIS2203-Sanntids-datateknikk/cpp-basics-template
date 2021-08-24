@@ -30,6 +30,14 @@ int computeSum(const std::vector<int> &integers)
     return -1;
 }
 
+int countValuesBelowThreshold(const std::vector<double> &doubles)
+{
+
+    // TODO return the number of elements in `doubles` that has a value > 50
+
+    return 0;
+}
+
 } // namespace ais2203
 
 

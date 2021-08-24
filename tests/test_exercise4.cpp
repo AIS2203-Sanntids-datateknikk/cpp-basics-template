@@ -6,7 +6,7 @@
 
 #include <memory>
 
-TEST_CASE("Introduce yourself")
+TEST_CASE("1: Implement greeting")
 {
 
    auto s = std::make_unique<ais2203::Student>("John", "Doe");
